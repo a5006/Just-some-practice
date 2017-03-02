@@ -1,0 +1,13 @@
+* {padding: 0;margin: 0;}
+body {width: 100%;}
+section {width: 1100px;height: 700px;background-color: blue;background-image: linear-gradient(rgb(196, 228, 253)0%, white 60%, rgb(148, 190, 89));}
+.cloud:before,
+.cloud:after {background: #fff;position: absolute;display: block;content: "";border-radius: 50%;}
+.cloud::before {width: 140px;height: 50px;-webkit-transform: translate(-50px, 23px);-moz-transform: translate(-50px, 23px);-ms-transform: translate(-50px, 23px);transform: translate(-50px, 23px);border-right: 1px solid #ff;border-bottm: 12px solid #ff}
+.cloud {background: #fff;width: 80px;height: 90px;position: relative;margin: 0 auto;border-radius: 50%;}
+.cloud::after {width: 76px;height: 56px;;-webkit-transform: rotate(72deg) translate(8px, 45px);-moz-transform: rotate(72deg) translate(8px, 45px);-ms-transform: rotate(72deg) translate(8px, 45px);transform: rotate(72deg) translate(8px, 45px);}
+.one {-webkit-transform: translate(0px, 60px);-moz-transform: translate(0px, 60px);-ms-transform: translate(0px, 60px);transform: translate(0px, 60px);}
+.two {-webkit-transform: translate(-189px, -70px) scale(0.6);-moz-transform: translate(-189px, -70px) scale(0.6);-ms-transform: translate(-189px, -70px) scale(0.6);transform: translate(-189px, -70px) scale(0.6);}
+.three {-webkit-transform: translate(-109px, -70px) scale(0.6);-moz-transform: translate(-109px, -70px) scale(0.6);-ms-transform: translate(-109px, -70px) scale(0.6);transform: translate(-109px, -70px) scale(0.6);}
+.four {-webkit-transform: translate(116px, -144px) scale(0.4);-moz-transform: translate(116px, -144px) scale(0.4);-ms-transform: translate(116px, -144px) scale(0.4);transform: translate(116px, -144px) scale(0.4);}
+.five {-webkit-transform: translate(246px, -306px) scale(0.6);-moz-transform: translate(246px, -306px) scale(0.6);-ms-transform: translate(246px, -306px) scale(0.6);transform: translate(246px, -306px) scale(0.6);}
