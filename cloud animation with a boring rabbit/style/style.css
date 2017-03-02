@@ -1,0 +1,36 @@
+* {margin: 0;padding: 0;box-sizing: border-box;}
+section {width: 100vw;height: 100vh;position: relative;overflow: hidden;}
+
+/*下面系天空和草地的渐变背景色*/
+
+.bg-top, .bg-bottom {position: absolute;}
+.bg-top {width: 100%;height: 50%;background-image: linear-gradient(rgb(196, 228, 253)0%, white 100%);}
+.bg-bottom {top: 50%;width: 100%;height: 50%;background-image: linear-gradient(to top, rgb(148, 190, 89) 50%, #fff 100%);}
+.cloud:before, .cloud:after {background: #fff;position: absolute;display: block;content: "";border-radius: 50%;}
+.cloud::before {background: inherit;width: 140px;height: 50px;-webkit-transform: translate(-50px, 23px);-moz-transform: translate(-50px, 23px);-ms-transform: translate(-50px, 23px);transform: translate(-50px, 23px);border-right: 16px solid transparent;border-bottom: 12px solid transparent;}
+.cloud {z-index: 2;background: #fff;width: 80px;height: 90px;position: relative;margin: 0 auto;border-radius: 50%;animation-timing-function: linear;animation-direction: normal;animation-iteration-count: infinite;}
+.cloud::after {width: 76px;height: 56px;background: inherit;-webkit-transform: rotate(72deg) translate(8px, 45px);-moz-transform: rotate(72deg) translate(8px, 45px);-ms-transform: rotate(72deg) translate(8px, 45px);transform: rotate(72deg) translate(8px, 45px);}
+
+/*各个不同的组合云的位置设置*/
+
+.one {-webkit-animation-name: one;-webkit-animation-duration: 17s;animation-name: one;animation-duration: 17s;}
+.two {background-color: rgba(255, 255, 255, 0.9);-webkit-animation-name: one;-webkit-animation-duration: 17s;animation-name: two;animation-duration: 18s;}
+.three {background-color: rgba(255, 255, 255, 0.7);-webkit-animation-name: three;-webkit-animation-duration: 10s;animation-name: three;animation-duration: 10s;}
+.four {background-color: rgba(255, 255, 255, 0.4);-webkit-animation-name: four;-webkit-animation-duration: 9s;animation-name: four;animation-duration: 9s;}
+.five {-webkit-animation-name: five;-webkit-animation-duration: 7s;animation-name: five;animation-duration: 7s;}
+
+/*兔子rabbit*/
+
+img {position: absolute;width: 130px;height: 120px;right: 200px;bottom: 50px;}
+
+/*动画设置再这里*/
+
+@keyframes one {from {transform: translate(100vw);}to {transform: translate(-100vw);}}
+@-webkit-keyframes one {from {transform: translate(100vw);}to {transform: translate(-100vw);}}
+@keyframes two {from {transform: translate(100vw) scale(.6);}to {transform: translate(-100vw) scale(.6);}}
+@keyframes two {from {transform: translate(100vw) scale(.6);}to {transform: translate(-100vw) scale(.6);}}
+@-webkit-keyframes three {from {transform: translate(100vw, -26vh)scale(.4);}to {transform: translate(-100vw, -26vh)scale(.4);}}
+@keyframes four {from {transform: translate(100vw, -39vh)scale(.5);}to {transform: translate(-100vw, -39vh)scale(.5);;}}
+@-webkit-keyframes four {from {transform: translate(100vw, -39vh)scale(.5);}to {transform: translate(-100vw, -39vh)scale(.5);;}}
+@keyframes five {from {transform: translate(100vw, -30vh) scale(.4);}to {transform: translate(-100vw, -30vh) scale(.4);;}}
+@-webkit-keyframes five {from {transform: translate(100vw, -30vh) scale(.4);}to {transform: translate(-100vw, -30vh) scale(.4);;}
